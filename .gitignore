@@ -1,0 +1,23 @@
+# Secrets — never commit to a public repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*-credentials.json
+*-service-account.json
+secrets/
+private/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+.cache/
+node_modules/
