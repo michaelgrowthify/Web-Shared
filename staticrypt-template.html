@@ -2,7 +2,7 @@
 <html class="staticrypt-html" lang="en-AU">
 <head>
     <meta charset="utf-8" />
-    <title>Growthify - Protected</title>
+    <title>/*[|template_title|]*/0</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
@@ -169,24 +169,24 @@
 
             <div class="staticrypt-instructions">
                 <h1>Protected document</h1>
-                <p>Enter the password sent to you to view this document.</p>
+                <p>/*[|template_instructions|]*/0</p>
             </div>
 
             <div class="staticrypt-password-container">
-                <input id="staticrypt-password" type="password" name="password" placeholder="Password" autofocus autocomplete="current-password" />
-                <button type="button" class="staticrypt-toggle" id="staticrypt-toggle" aria-label="Show password">
+                <input id="staticrypt-password" type="password" name="password" placeholder="/*[|template_placeholder|]*/0" autofocus autocomplete="current-password" />
+                <button type="button" class="staticrypt-toggle" id="staticrypt-toggle" aria-label="/*[|template_toggle_show|]*/0">
                     <svg id="staticrypt-toggle-show-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
                     <svg id="staticrypt-toggle-hide-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
                 </button>
             </div>
 
-            <button type="submit" class="staticrypt-decrypt-button">Unlock</button>
+            <button type="submit" class="staticrypt-decrypt-button">/*[|template_button|]*/0</button>
 
             <div id="staticrypt-decrypt-error"></div>
 
             <label class="staticrypt-remember" id="staticrypt-remember-label" style="display: /*[|is_remember_enabled|]*/none">
                 <input id="staticrypt-remember" type="checkbox" name="remember" />
-                <span>Keep me signed in</span>
+                <span>/*[|template_remember|]*/0</span>
             </label>
 
             <hr class="staticrypt-hr" />

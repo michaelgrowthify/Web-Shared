@@ -44,6 +44,15 @@ while IFS= read -r -d '' src_file; do
     --password "$password" \
     --salt "$REPO_SALT" \
     --short \
+    -t staticrypt-template.html \
+    --template-title "Growthify - Protected" \
+    --template-instructions "Enter the password sent to you to view this document." \
+    --template-button "Unlock" \
+    --template-placeholder "Password" \
+    --template-error "That password didn't work. Try again." \
+    --template-remember "Keep me signed in" \
+    --template-toggle-show "Show password" \
+    --template-toggle-hide "Hide password" \
     -d "$out_dir" >/dev/null
 done < <(find "$SRC" -type f -name "*.html" -print0)
 
